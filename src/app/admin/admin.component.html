@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="../../assets/images/" alt="">
+        </a>
+        <h2 style="color: #28a745;">Admin Console</h2>
+    </nav>
+    <div class="row mt-2">
+        <div class="col-3">
+            <button class="btn btn-outline-success btn-block"routerLink="/admin/main/products"routerLinkActive="active">Products</button>
+            <button class="btn btn-outline-success btn-block"routerLink="/admin/main/orders"routerLinkActive="active">Orders</button>
+            <button class="btn btn-outline-danger btn-block" (click)="logout()">Logout</button>
+        </div>
+        <div class="col-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
